@@ -12,10 +12,10 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "example-app-1",
-    title: "Business Analytics Dashboard",
-    description: "A comprehensive analytics dashboard for visualizing business KPIs and metrics. Built with modern data visualization libraries to provide real-time insights into business performance.",
-    techStack: ["React", "TypeScript", "D3.js", "Node.js", "PostgreSQL"],
+    id: "Insulation_Calculator",
+    title: "Insulation Calculator App",
+    description: "A comprehensive calculator for clients to estimate the cost of their insulation project.",
+    techStack: ["React", "JavaScript", "D3.js", "Node.js"],
     status: "live",
     featured: true,
   },
