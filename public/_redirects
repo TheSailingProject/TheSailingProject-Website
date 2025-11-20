@@ -1,0 +1,10 @@
+# Cloudflare Pages Redirects
+
+# Redirect www to non-www (or vice versa - choose one)
+# https://www.thesailingproject.com/* https://thesailingproject.com/:splat 301
+
+# Force HTTPS (Cloudflare handles this automatically, but you can be explicit)
+# http://thesailingproject.com/* https://thesailingproject.com/:splat 301
+
+# Example: Old URLs to new (add as needed)
+# /old-page /new-page 301

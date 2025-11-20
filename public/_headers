@@ -1,0 +1,35 @@
+# Security Headers for Cloudflare Pages
+
+/*
+  # Prevent clickjacking attacks
+  X-Frame-Options: DENY
+
+  # Prevent MIME type sniffing
+  X-Content-Type-Options: nosniff
+
+  # Enable browser XSS protection
+  X-XSS-Protection: 1; mode=block
+
+  # Control referrer information
+  Referrer-Policy: strict-origin-when-cross-origin
+
+  # Restrict browser features and APIs
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+
+  # Content Security Policy - prevents XSS and injection attacks
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://plausible.io; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://plausible.io; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+
+  # HSTS - Force HTTPS (uncomment after confirming HTTPS works)
+  # Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+
+# Cache control for static assets
+/Assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Don't cache HTML pages
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Cache branding images
+/Assets/Branding/*
+  Cache-Control: public, max-age=31536000, immutable
