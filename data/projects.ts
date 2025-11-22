@@ -16,6 +16,8 @@ export const projects: Project[] = [
     title: "Insulation Calculator App",
     description: "A comprehensive calculator for clients to estimate the cost of their insulation project.",
     techStack: ["React", "JavaScript", "D3.js", "Node.js"],
+    demoUrl: "https://insulation-calculator.pages.dev/",
+    githubUrl: "https://github.com/TheSailingProject/insulation_calculator",
     status: "live",
     featured: true,
   },
