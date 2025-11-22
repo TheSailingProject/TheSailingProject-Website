@@ -1,17 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
 
 export default function Hero() {
-  const { resolvedTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Background gradient */}
@@ -81,27 +72,32 @@ export default function Hero() {
             </motion.div>
           </motion.div>
 
-          {/* Logo/Image */}
+          {/* Highlights */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             className="relative"
           >
-            <div className="relative w-full max-w-md mx-auto">
-              {mounted && (
-                <Image
-                  src={resolvedTheme === 'dark'
-                    ? "/Assets/branding/TSP_LogoIcoon_Beige_Transparant 2024-01-10 16_41_24.png"
-                    : "/Assets/branding/TSP_LogoIcoon_Blauw_Transparant 2024-01-10 16_41_27.png"
-                  }
-                  alt="The Sailing Project Logo"
-                  width={500}
-                  height={500}
-                  className="w-full h-auto object-contain"
-                  priority
-                />
-              )}
+            <div className="grid grid-cols-2 gap-6 max-w-lg mx-auto">
+              {[
+                { icon: "📊", title: "Data Analytics", desc: "Power BI & Python Expert" },
+                { icon: "⛵", title: "Yachtmaster", desc: "Offshore Certified" },
+                { icon: "🌍", title: "Multilingual", desc: "4 Languages" },
+                { icon: "🎓", title: "MSc Graduate", desc: "KU Leuven" },
+              ].map((item, index) => (
+                <motion.div
+                  key={item.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
+                  className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 dark:border-gray-700"
+                >
+                  <div className="text-4xl mb-3">{item.icon}</div>
+                  <h3 className="font-bold text-gray-900 dark:text-white mb-1">{item.title}</h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">{item.desc}</p>
+                </motion.div>
+              ))}
             </div>
           </motion.div>
         </div>
