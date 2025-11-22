@@ -4,6 +4,18 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const experience = [
+    {
+    title: "Data Analyst - Consultant",
+    company: "ING Belgium",
+    location: "Brussels, Belgium",
+    period: "Oct 2024 - Present",
+    description: "Consulting for ING's Data & Analytics department to enhance data-driven decision-making processes and optimize reporting systems.",
+    highlights: [
+      "Developed automated reporting solutions that reduced manual effort by 30%",
+      "Collaborated with cross-functional teams to identify data needs and deliver actionable insights",
+      "Implemented data quality checks to ensure accuracy and reliability of reports"
+    ]
+  },
   {
     title: "Professional Skipper",
     company: "Navigate Travel",
@@ -32,7 +44,7 @@ const experience = [
 
 const education = [
   {
-    degree: "Professional Yachtmaster Offshore",
+    degree: "RYA Yachtmaster Offshore",
     field: "Navigation, Crew Management & Maritime Safety",
     institution: "United Kingdom Sailing Academy, Cowes",
     period: "Nov 2023 - Mar 2024",
@@ -54,9 +66,6 @@ const education = [
 const certifications = [
   "STCW Basic Safety Training (Nov 2023) - Firefighting, First Aid, Survival Techniques",
   "Professional Yachtmaster Offshore - Vessels up to 200 GT",
-  "Statistical Analysis & Predictive Modeling",
-  "Power BI & Data Visualization Expert",
-  "Multilingual: Dutch & English (Fluent), French (Proficient), Spanish (Basic)",
 ];
 
 export default function Resume() {

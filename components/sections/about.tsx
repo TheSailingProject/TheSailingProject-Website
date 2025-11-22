@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const skills = [
-  { category: "Data & Analytics", items: ["Statistical Analysis", "Predictive Models", "Power BI", "Microsoft Excel", "Python", "SQL"] },
-  { category: "Maritime", items: ["Professional Yachtmaster Offshore", "Navigation & Safety", "Crew Management", "STCW Certified"] },
-  { category: "Languages", items: ["Dutch (Native)", "English (Fluent)", "French (Proficient)", "Spanish (Basic)"] },
+  { category: "Data & Analytics", items: ["Power BI","Microsoft Fabric", "Microsoft Excel", "Python", "SQL"] },
+  { category: "Maritime", items: ["RYA Yachtmaster Offshore", "Navigation & Safety", "Crew Management", "STCW Certified"] },
+  { category: "Languages", items: ["Dutch (Native)", "English (Fluent)", "French (Proficient)"] },
   { category: "Hobbies & Interests", items: ["Sailing", "Tennis", "Hiking"] },
 ];
 

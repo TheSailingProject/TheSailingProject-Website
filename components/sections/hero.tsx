@@ -39,7 +39,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl sm:text-2xl text-brand-orange-600 dark:text-brand-orange-500 font-semibold mb-4"
             >
-              Data Analyst & Professional Yachtmaster
+              Data Analyst & Professional Skipper
             </motion.p>
 
             <motion.p
@@ -48,7 +48,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0"
             >
-              Data analyst specializing in statistical analysis and predictive modeling.
+              Data analyst specializing in end to end reporting solutions.
               Professional Yachtmaster with a passion for sailing. Multilingual professional based in Brussels.
             </motion.p>
 
