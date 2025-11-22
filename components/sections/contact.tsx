@@ -221,15 +221,15 @@ export default function Contact() {
                 <div>
                   <h4 className="font-semibold text-gray-900 dark:text-white">Email</h4>
                   <a
-                    href="mailto:arnosnoeys@gmail.com"
+                    href="mailto:arno@thesailingproject.com"
                     className="text-brand-orange-600 dark:text-brand-orange-400 hover:underline"
                   >
-                    arnosnoeys@gmail.com
+                    arno@thesailingproject.com
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4 p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+              {/* <div className="flex items-start space-x-4 p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
                 <svg
                   className="w-6 h-6 text-brand-orange-500 flex-shrink-0 mt-1"
                   fill="none"
@@ -250,7 +250,7 @@ export default function Contact() {
                     +32 479 02 95 38
                   </a>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             {/* Social Links placeholder */}
