@@ -30,12 +30,12 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: "example-app-3",
-    title: "Data Migration Tool",
-    description: "Enterprise-grade data migration and transformation tool designed to streamline database migrations with validation, error handling, and rollback capabilities.",
-    techStack: ["Python", "SQL", "Docker", "React"],
-    status: "live",
-    featured: false,
+    id: "Power_BI_Dashboard",
+    title: "Power BI Sales Dashboard",
+    description: "A dynamic sales dashboard built in Power BI to visualize key performance indicators and sales trends for a retail company.",
+    techStack: ["Power BI", "Microsoft Fabric", "DAX", "SQL", "Microsoft Excel"],
+    status: "in-development",
+    featured: true,
   },
 ];
 

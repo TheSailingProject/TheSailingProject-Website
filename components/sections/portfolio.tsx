@@ -28,7 +28,7 @@ export default function Portfolio() {
           </h2>
           <div className="w-20 h-1 bg-brand-orange-500 mx-auto mb-8" />
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            A collection of web applications and tools I've built, combining data expertise with creative development
+            A collection of web applications, dashboards and tools I've built, combining data expertise with creative development
           </p>
         </motion.div>
 

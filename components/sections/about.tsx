@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const skills = [
-  { category: "Data & Analytics", items: ["Power BI","Microsoft Fabric", "Microsoft Excel", "Python", "SQL"] },
+  { category: "Data & Analytics", items: ["Power BI","Microsoft Fabric", "Microsoft Excel", "Python", "DAX", "SQL"] },
   { category: "Maritime", items: ["RYA Yachtmaster Offshore", "Navigation & Safety", "Crew Management", "STCW Certified"] },
   { category: "Languages", items: ["Dutch (Native)", "English (Fluent)", "French (Proficient)"] },
   { category: "Hobbies & Interests", items: ["Sailing", "Tennis", "Hiking"] },
@@ -45,12 +45,14 @@ export default function About() {
                 I'm a <strong>Data Analyst</strong> with a Master's degree in Business Administration specializing in
                 <strong> Global Logistics & Port Management</strong> from Catholic University of Leuven. Currently based in Brussels,
                 I combine analytical expertise with maritime passion.
+
               </p>
 
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                 My professional experience includes working as a <strong>Data Analyst at MSC PSA European Terminal</strong> in Antwerp,
                 where I analyzed operational data to optimize cargo flow, built dashboards for real-time KPI monitoring, and
                 delivered actionable insights that directly influenced operational decisions.
+
               </p>
 
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
@@ -58,6 +60,7 @@ export default function About() {
                 at the United Kingdom Sailing Academy. I've skippered sailing yachts for Navigate Travel, combining my leadership
                 skills with my passion for the sea. The same principles that guide good data analysis—attention to detail,
                 strategic planning, and decisive action—are essential for successful navigation.
+
               </p>
 
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
