@@ -92,8 +92,8 @@ export default function Hero() {
               {mounted && (
                 <Image
                   src={resolvedTheme === 'dark'
-                    ? "/Assets/Branding/TSP_LogoIcoon_Beige_Transparant 2024-01-10 16_41_24.png"
-                    : "/Assets/Branding/TSP_LogoIcoon_Blauw_Transparant 2024-01-10 16_41_27.png"
+                    ? "/Assets/branding/TSP_LogoIcoon_Beige_Transparant 2024-01-10 16_41_24.png"
+                    : "/Assets/branding/TSP_LogoIcoon_Blauw_Transparant 2024-01-10 16_41_27.png"
                   }
                   alt="The Sailing Project Logo"
                   width={500}

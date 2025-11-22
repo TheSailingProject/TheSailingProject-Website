@@ -84,8 +84,8 @@ export default function Navigation() {
               <div className="relative h-8 sm:h-10 w-auto">
                 <Image
                   src={resolvedTheme === 'dark'
-                    ? "/Assets/Branding/TSP_Naam_Beige_Transparant 2024-01-10 16_41_15.png"
-                    : "/Assets/Branding/TSP_Naam_Blauw_Transparant 2024-01-10 16_41_35.png"
+                    ? "/Assets/branding/TSP_Naam_Beige_Transparant 2024-01-10 16_41_15.png"
+                    : "/Assets/branding/TSP_Naam_Blauw_Transparant 2024-01-10 16_41_35.png"
                   }
                   alt="The Sailing Project"
                   width={200}
