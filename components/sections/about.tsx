@@ -40,19 +40,17 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="space-y-6"
           >
-            <div className="prose prose-lg dark:prose-invert max-w-none">
+            <div className="prose prose-lg dark:prose-invert max-w-none space-y-6">
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                 I'm a <strong>Data Analyst</strong> with a Master's degree in Business Administration specializing in
                 <strong> Global Logistics & Port Management</strong> from Catholic University of Leuven. Currently based in Brussels,
                 I combine analytical expertise with maritime passion.
-
               </p>
 
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                 My professional experience includes working as a <strong>Data Analyst at MSC PSA European Terminal</strong> in Antwerp,
                 where I analyzed operational data to optimize cargo flow, built dashboards for real-time KPI monitoring, and
                 delivered actionable insights that directly influenced operational decisions.
-
               </p>
 
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
@@ -60,7 +58,6 @@ export default function About() {
                 at the United Kingdom Sailing Academy. I've skippered sailing yachts for Navigate Travel, combining my leadership
                 skills with my passion for the sea. The same principles that guide good data analysis—attention to detail,
                 strategic planning, and decisive action—are essential for successful navigation.
-
               </p>
 
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">

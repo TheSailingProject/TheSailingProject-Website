@@ -2,8 +2,16 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 export default function Hero() {
+  const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Background gradient */}
@@ -80,18 +88,20 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="relative"
           >
-            <div className="relative w-full max-w-md mx-auto aspect-square">
-              <div className="absolute inset-0 bg-gradient-to-br from-brand-blue-400 to-brand-beige-400 rounded-3xl blur-2xl opacity-30 animate-pulse" />
-              <div className="relative bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-2xl">
+            <div className="relative w-full max-w-md mx-auto">
+              {mounted && (
                 <Image
-                  src="/Assets/Branding/TSP_Logo+Naam_BlauweAchtergrond_Vierkant 2024-01-10 16_41_37.png"
+                  src={resolvedTheme === 'dark'
+                    ? "/Assets/Branding/TSP_LogoIcoon_Beige_Transparant 2024-01-10 16_41_24.png"
+                    : "/Assets/Branding/TSP_LogoIcoon_Blauw_Transparant 2024-01-10 16_41_27.png"
+                  }
                   alt="The Sailing Project Logo"
                   width={500}
                   height={500}
-                  className="w-full h-full object-contain rounded-2xl"
+                  className="w-full h-auto object-contain"
                   priority
                 />
-              </div>
+              )}
             </div>
           </motion.div>
         </div>

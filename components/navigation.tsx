@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import ThemeToggle from "./theme-toggle";
+import { useTheme } from "next-themes";
 
 const navItems = [
   { name: "About", href: "#about" },
@@ -14,6 +15,12 @@ const navItems = [
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("");
+  const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -73,17 +80,21 @@ export default function Navigation() {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           >
-            <div className="relative w-10 h-10 sm:w-12 sm:h-12">
-              <Image
-                src="/Assets/Branding/TSP_Logo+Naam_BlauweAchtergrond_Vierkant 2024-01-10 16_41_37.png"
-                alt="The Sailing Project"
-                fill
-                className="object-contain rounded-lg transition-transform duration-200 group-hover:scale-105"
-              />
-            </div>
-            <span className="hidden sm:block font-semibold text-lg text-gray-900 dark:text-white">
-              The Sailing Project
-            </span>
+            {mounted && (
+              <div className="relative h-8 sm:h-10 w-auto">
+                <Image
+                  src={resolvedTheme === 'dark'
+                    ? "/Assets/Branding/TSP_Naam_Beige_Transparant 2024-01-10 16_41_15.png"
+                    : "/Assets/Branding/TSP_Naam_Blauw_Transparant 2024-01-10 16_41_35.png"
+                  }
+                  alt="The Sailing Project"
+                  width={200}
+                  height={40}
+                  className="h-full w-auto object-contain transition-transform duration-200 group-hover:scale-105"
+                  priority
+                />
+              </div>
+            )}
           </a>
 
           {/* Desktop Navigation */}
